@@ -40,5 +40,3 @@ make docker
 docker run --name reverse-proxy --restart always -p 80:80 -d -v ./nginx/reverse-proxy.conf:/etc/nginx/nginx.conf:ro --network businessnet nginx
 
 # BEGIN BUILD CONTAINERS
-
-sudo reboot now
