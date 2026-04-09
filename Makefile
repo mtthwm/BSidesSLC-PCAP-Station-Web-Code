@@ -32,8 +32,17 @@ run: ## Run the Flask application (http://localhost:1283)
 # Docker
 docker: docker-build docker-run ## Build and run with Docker
 
+docker-dev: docker-build docker-run-dev
+
 docker-build: ## Build Docker image
 	docker build -t flaskblog .
+
+docker-run-dev:
+	docker run --name flaskblog \
+		-p 1283:1283 \
+		--rm \
+		$(if $(wildcard .env),--env-file .env) \
+		flaskblog
 
 docker-run: ## Run Docker container
 	docker run --name flaskblog -d \
