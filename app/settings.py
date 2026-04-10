@@ -120,7 +120,7 @@ class Settings:
     LOG_FILE_ROOT = LOG_FOLDER_ROOT + "log.log"
     LOG_JSON_ROOT = LOG_FOLDER_ROOT + "log.json"
     # Session Configuration
-    APP_SECRET_KEY = os.environ.get("APP_SECRET_KEY", secrets.token_urlsafe(32))
+    APP_SECRET_KEY = "OOPS-I-COMMITED-MY-SECRET-KEY-TO-VERSION-CONTROL!1!s"#os.environ.get("APP_SECRET_KEY", secrets.token_urlsafe(32))
     SESSION_PERMANENT = _bool(os.environ.get("SESSION_PERMANENT", "True"))
 
     # Database Configuration
