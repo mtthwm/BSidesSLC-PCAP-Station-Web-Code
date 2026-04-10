@@ -27,6 +27,15 @@ sudo apt install wireshark
 
 # BEGIN INSTALL SELENIUM DEPS
 
-python -m pip install -r ./selenium/requirements.txt
+sudo apt install python3-pip python3-venv
+python3 -m venv virtual
+source ./virtual/bin/activate
+pip install -r ./selenium/requirements.txt
 
 # END INSTALL SELENIUM DEPS
+
+# BEGIN SANITY CHECK
+
+python3 ./selenium/sanity.py
+
+# END SANITY CHECK
