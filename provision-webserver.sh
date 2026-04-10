@@ -2,7 +2,11 @@
 sudo hostnamectl set-hostname businessserver
 # END SET HOSTNAME
 
+# BEGIN EDIT HOSTS FILE
 
+echo "192.168.1.104     businesscorp.com" >> /etc/hosts
+
+# END EDIT HOSTS FILE
 
 # BEGIN DOCKER INSTALL
 
