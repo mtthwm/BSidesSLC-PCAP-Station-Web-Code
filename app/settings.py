@@ -141,7 +141,7 @@ class Settings:
     DEFAULT_ADMIN = _bool(os.environ.get("DEFAULT_ADMIN", "True"))
     DEFAULT_ADMIN_USERNAME = os.environ.get("DEFAULT_ADMIN_USERNAME", "admin")
     DEFAULT_ADMIN_EMAIL = os.environ.get("DEFAULT_ADMIN_EMAIL", "admin@flaskblog.com")
-    DEFAULT_ADMIN_PASSWORD = os.environ.get("DEFAULT_ADMIN_PASSWORD", "admin")
+    DEFAULT_ADMIN_PASSWORD = "commend-obsolete-bullhorn"
     DEFAULT_ADMIN_POINT = int(os.environ.get("DEFAULT_ADMIN_POINT", 0))
     DEFAULT_ADMIN_PROFILE_PICTURE = os.environ.get(
         "DEFAULT_ADMIN_PROFILE_PICTURE",

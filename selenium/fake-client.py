@@ -6,9 +6,9 @@ from time import sleep
 import random
 
 # --- Configuration ---
-URL = "http://localhost:1283/"
+URL = "http://businesscorp.com/"
 USERNAME = "admin"
-PASSWORD = "admin"
+PASSWORD = "commend-obsolete-bullhorn"
 # ---------------------
 
 driver = webdriver.Chrome()
