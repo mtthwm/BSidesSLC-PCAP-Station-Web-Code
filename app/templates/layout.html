@@ -9,22 +9,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#171717" />
 
-        <link
-            rel="icon"
-            href="https://raw.githubusercontent.com/DogukanUrker/flaskBlog/main/images/Icon180.ico"
-        />
-
         <!-- Tailwind CSS v4 -->
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script src="{{ url_for('static', filename='js/tailwindcss-browser-4-min.js') }}"></script>
 
         <!-- DaisyUI v5 -->
         <link
-            href="https://cdn.jsdelivr.net/npm/daisyui@5/daisyui.css"
+            href="{{ url_for('static', filename='css/daisyui.css') }}"
             rel="stylesheet"
             type="text/css"
         />
         <link
-            href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+            href="{{ url_for('static', filename='css/daisyui-themes.css') }}"
             rel="stylesheet"
             type="text/css"
         />
@@ -32,7 +27,7 @@
         <!-- Tabler Icons -->
         <link
             rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+            href="{{ url_for('static', filename='css/tabler-icons.min.css') }}"
         />
 
         <meta property="og:type" content="website" />
