@@ -8,6 +8,12 @@ sudo apt install google-chrome-stable
 # END INSTALL CHROME
 
 
+# BEGIN EDIT HOSTS FILE
+
+echo "192.168.1.104     businesscorp.com" >> /etc/hosts
+
+# END EDIT HOSTS FILE
+
 
 # BEGIN INSTALL WIRESHARK
 
